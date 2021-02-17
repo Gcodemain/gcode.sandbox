@@ -9,20 +9,10 @@ for (const i of up.split(' ')) {
         mass.push(r)
     }
 }
-let result = mass[0].concat(' ', mass[1], ' ', mass[2], ' ', mass[3])
-result
-console.log(result);
 
-function validSpace(name) {
-    let n = name.length;
-    let res = ''
-    let index = 0;
-    while (index !== n) {
-        let res = name[n].concat(' ', name[n])
-        n++
-    }
-    console.log(res);
-}
+let mStr = mass.join(' ');
+mStr
 
-let data = validSpace(mass)
-console.log(data);
+
+
+
