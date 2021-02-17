@@ -1,28 +1,28 @@
-const names = ['Иванов Иван Иванович', 'иванов иван иванович', 'Иванов  Иван  иванович'];
+const text = 'Кузнецов Евгений Евгеньевич оглы';
 
-let name_01 = names[0];
-let name_02 = names[1];
-let name_03 = names[2];
+const up = text.toLowerCase();
 
-// let t = name_01.split(' ');
-//
-// for (let el of t) {
-//     if (el !== '') {
-//         let r = el.replace(el[0], el[0].toUpperCase())
-//     }
-// }
-
-function fullNameValidator(name) {
-    name = name.split(' ');
-    let result = [];
-    for (let element of name) {
-        if (element !== '') {
-            let r = element.replace(element[0], element[0].toUpperCase());
-            result.push(r)
-        }
-        return result
+let mass = []
+for (const i of up.split(' ')) {
+    if (i.length > 0) {
+        let r = i.replace(i[0], i[0].toUpperCase());
+        mass.push(r)
     }
 }
+let result = mass[0].concat(' ', mass[1], ' ', mass[2], ' ', mass[3])
+result
+console.log(result);
 
-let res = fullNameValidator(name_03)
-res
+function validSpace(name) {
+    let n = name.length;
+    let res = ''
+    let index = 0;
+    while (index !== n) {
+        let res = name[n].concat(' ', name[n])
+        n++
+    }
+    console.log(res);
+}
+
+let data = validSpace(mass)
+console.log(data);
