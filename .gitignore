@@ -1,2 +1,8 @@
 .idea
 .DS_Store
+jsandbox/coverage/
+jsandbox/node_modules/
+jsandbox/coverage/lcov-report
+jsandbox/coverage/clover.xml
+
+

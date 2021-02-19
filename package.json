@@ -1,0 +1,19 @@
+{
+  "name": "gcode.sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gcodemain/gcode.sandbox.git"
+  },
+  "author": "gcode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gcodemain/gcode.sandbox/issues"
+  },
+  "homepage": "https://github.com/Gcodemain/gcode.sandbox#readme"
+}

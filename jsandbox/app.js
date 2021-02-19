@@ -80,5 +80,8 @@ const baseCodePpo = {
   'ЦЛМ': '281',
   'РАС': '291'
 };
-console.log(user)
+
+const sum = require('./sandbox.js');
+
+
 
