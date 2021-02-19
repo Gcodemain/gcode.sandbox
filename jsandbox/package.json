@@ -1,6 +1,7 @@
 {
   "name": "jsandbox",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.17",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
     "@babel/preset-env": "^7.12.17",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3"
