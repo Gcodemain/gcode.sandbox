@@ -10,5 +10,9 @@ describe("Word Counters",() =>{
     test("12 words",()=> {
         expect(wordCount("w o r d  w o r d  w o r d")).toBe(12)
     })
+    test("0 words", () => {
+        expect(wordCount("")).toBe(0)
+    })
+
 
 } )
