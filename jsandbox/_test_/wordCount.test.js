@@ -1,4 +1,4 @@
-import {wordCount} from "./wordCount.js";
+import {wordCount} from "../_lib_/functions/wordCount.js";
 
 describe("Word Counters",() =>{
     test("3 words",()=>{
