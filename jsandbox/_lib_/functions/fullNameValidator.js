@@ -1,6 +1,5 @@
 /*
-TODO: - refactor this function
-      - add tests
+TODO: - refactor this function, add tests
 */
 function fullNameValidator(name) {
     let standardFormat = name.toLowerCase().trim();
@@ -24,4 +23,18 @@ function fullNameValidator(name) {
         return dataName.join(' ');
     }
 }
-export default(fullNameValidator)
+
+//fn refactor
+const makeLineSplitting = (str) => { return str.toLowerCase().trim().split(' ') };
+const removingBlankLines = (arr) => { return arr.length > 0 };
+const changeFirstLetter = (str) => {
+    return str = str.charAt(0).toUpperCase() + str.slice(1)
+};
+
+const Format = (str) => {
+    return makeLineSplitting(str)
+        .filter(removingBlankLines)
+        .map(changeFirstLetter)
+        .join(' ');
+}
+export { Format, fullNameValidator }
